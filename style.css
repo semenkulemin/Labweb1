@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+}
+* {
+    font-family: HelveticaNeueCyr, serif;
+    text-align: center;
+    font-weight: normal;
+}
+body{
+    background-color: #EEE2DC
+}
+header {
+    font-size: 0.6em; /*Высота шрифта относительная */
+    top: 0; /*Отступ сверху */
+}
+
+footer {
+    bottom: 0 /* Положение нижнего края содержимого */
+}
+
+header, footer {
+    z-index: 10; /*Слои, третье измерение, бууу */
+    width: 100%; /* Ширина */
+    position: fixed; /* Постоянное положение при прокрутке веб-страницы */
+    color: white;
+    background-color: #123C69;
+    left: 0; /* Расстояние от левого края */
+}
+
+#wholeContent {
+    background-color: #BAB2B5;
+    width: 80%;
+    margin: 70px auto; /* Отступ от верхнего и нижнего края, от левого и правого */
+}
+
+thead * {
+    margin-top: 4%
+}
+
+h3:first-letter{
+    font-size: 120%; /*Стиль первого символа в тексте (псевдоэлемент) */
+}
+
+input, select{
+    cursor: pointer /* Форма курсора в пределах элемента*/
+
+}
+
+input[type=text]{
+    width: 100px;
+}
+
+.animation:hover{
+    transform: scale(1.05);
+}
+
+.shades:hover , .animation:hover {
+    transition: 0.5s
+}
+
+a img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    height: 60px;
+}
+
+.shades {
+    box-shadow: 0 0 10px 1px black
+}
+
+.shades:hover {
+    box-shadow: 0 0 20px 2px black
+}
+
+#outputTable {
+    top: 200px;
+    border: 1px solid #AC3B61;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+
+#outputTable th {
+    background-color: #AC3B61;
+    color: white;
+}
+
+#outputTable * {
+    padding: 15px;
+}
